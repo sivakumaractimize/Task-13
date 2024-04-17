@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>axios</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- axios cdn -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<style>
+
+   .mainBody {
+        width: 100%;
+        background-image: url(../assets/images/sky-6804245_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .main{
+        background-color:transparent;
+        width: 350px;
+        height: 500px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    input{
+      
+        border-radius: 10px;
+    }
+    i{
+       width: 30px;
+       height: 30px;
+      background-color: white;
+        padding: 5px;
+      
+        font-size: 20px;
+        border-radius: 100%;
+    }
+    img{
+        width: 200px;
+        height: auto;
+    }
+    #error{
+      color: red;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      .mainBody{
+        max-width: 100%;
+       
+        background-size: contain;
+      }
+      .main{
+        background-color:transparent;
+        width: 250px;
+        height: 400px;
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+    }
+</style>
+</head>
+<body>
+
+<div class="container-fluid d-flex justify-content-center align-items-center mainBody" style="height: 100vh;">
+   
+  <div class="row row-cols-1 text-center main">
+    
+    <div class="col mt-3">
+        <h2>Weather App</h2>
+          <div class=" text-center ">
+            <input type="text" placeholder="Enter City Name" id="location">
+          
+            <i class="fa-solid fa-magnifying-glass  " id="btn"></i>
+          </div>
+          <img src="" alt="" class="mt-5" id="WeatherImage">
+          <h4 id="error"></h4>
+          <h1 id="temprature"></h1>
+          <h4 id="description"></h4>
+          <p id="city"></p>
+    </div>
+  </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/script/axios/script.js"></script>
+</body>
+</html>
